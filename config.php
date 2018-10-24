@@ -1,7 +1,7 @@
 <?
 $host = "localhost";
-$usuario = "root";
-$senha = "123";
+$usuario = "";
+$senha = "";
 $banco = "chat";
 
 if(@!mysql_connect($host, $usuario, $senha)){
@@ -25,7 +25,7 @@ function __construct(){}
 
 
 	function BoasVindas(){
-	echo "Ol· <b>$_COOKIE[usuario]</b> Seu ultimo acesso foi em: $_COOKIE[dt_ult_acesso]</b>";
+	echo "Ol√° <b>$_COOKIE[usuario]</b> Seu ultimo acesso foi em: $_COOKIE[dt_ult_acesso]</b>";
 	}
 
 
