@@ -16,7 +16,7 @@ setcookie("cor_preferida", "valor", time()-3600);
 setcookie("dt_ult_acesso", "valor", time()-3600);
 setcookie("destino", "Todos", time()-3600);
 $dt_ult_acesso = date("Y/m/d H:m:s");
-mysql_query("INSERT INTO conversas VALUES ('', 'Sistema','todos', 'O usuario $_COOKIE[usuario] deixou o chat!','".date("Y-m-d H:i")."', '".time()."')");
+mysql_query("INSERT INTO conversas VALUES ('', 'Robo','todos', 'O usuario $_COOKIE[usuario] deixou o chat!','".date("Y-m-d H:i")."', '".time()."')");
 
 }
 
@@ -54,7 +54,7 @@ if($cont == 0){
 	setcookie("cor_preferida", $cor);
 	setcookie("dt_ult_acesso", $reSql['dt_ult_acesso']);
 	setcookie("destino", "Todos");
-	mysql_query("INSERT INTO conversas VALUES ('', 'Sistema', 'todos', 'O usuario $usuario acabou de entrar','".date("Y-m-d H:i")."', '".time()."')");
+	mysql_query("INSERT INTO conversas VALUES ('', 'Robo', 'todos', 'O usuario $usuario acabou de entrar','".date("Y-m-d H:i")."', '".time()."')");
 	mysql_query("UPDATE usuario SET dt_ult_acesso='$dt_ult_acesso' where usuario='$usuario' ");
 	echo "<script> location.href='index.php'; </script>";
 	}else{
