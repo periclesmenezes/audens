@@ -1,9 +1,9 @@
-<?
+<?php
 ob_start();
 include_once("config.php");	
 include_once("funcao.php");	
 if(file_exists("leiame.txt")){
-echo "<h1>Voce deve ler o arquivo LEIAME.TXT antes de utilizar este chat. Se voce já leu o arquivo delete ou renomeie para que o chat seja liberado para uso. <a href='leiame.txt'> LER O ARQUIVO AGORA </a></h1>";
+echo " </a></h1>";
 exit;
 }
 
@@ -25,11 +25,11 @@ $usuario = AntiSql($_POST['usuario']);
 $senha = md5($_POST['senha']);
 
 if(empty($usuario)){
-Alertar("O campo USUARIO não pode ficar em Branco", 0);
+Alertar("O campo USUARIO em Branco", 0);
 exit;
 }
 if(empty($senha)){
-Alertar("O campo SENHA não pode ficar em Branco", 0);
+Alertar("O campo SENHA em Branco", 0);
 exit;
 }
 $cor = AntiSql($_POST['cor']);
@@ -48,7 +48,7 @@ $cont = mysql_num_rows($sql);
 $reSql = mysql_fetch_assoc($sql);
 $dt_ult_acesso = date("Y/m/d H:m:s");
 if($cont == 0){
-	echo "Seus dados não foram localizados. tente novamente. ";
+	echo "Dados inexistentes. tente novamente!";
 	}else if($cont == 1 ){
 	setcookie("usuario" ,ucfirst($usuario));
 	setcookie("cor_preferida", $cor);

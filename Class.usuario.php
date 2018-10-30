@@ -1,4 +1,4 @@
-<?
+<?php
 include_once("funcao.php");
 
 
@@ -18,7 +18,7 @@ class Usuario {
 			mysql_query("INSERT INTO usuario VALUES('','$this->email', '$this->usuario', '$this->senha', '".date("Y/m/d H:m:s")."') ");
 			echo "VOCE FOI CADASTRADO COM SUCESSO, CLIQUE AQUI PARA LOGAR <a href='logar.php'>Logar</a>";
 		}else{
-			echo "Já existe um usuario com estes dados cadastrados. ";
+			echo "Ja existe um usuario com estes dados cadastrados. ";
 		}	
 	
 	}
@@ -32,12 +32,12 @@ class Usuario {
 	$cont = mysql_num_rows($sql);
 	
 		if($cont == 0){
-		echo "Usuario não existe";
+		echo "Usuario nï¿½o existe";
 		}else if($cont == 1){
 		$senha1 = rand(1111,9999);
 		$senha2 = md5($senha1);
 		mysql_query("UPDATE usuario SET senha = '$senha2' WHERE email='$this->Email' ");
-		Alertar("Sua senha foi Zerada, agora é: ".$senha1 , 0);
+		Alertar("Sua senha foi Zerada, agora ï¿½: ".$senha1 , 0);
 						
 	
 		}else{
@@ -60,12 +60,12 @@ class Usuario {
 					$cont = mysql_num_rows($sql);
 					
 						if($cont == 0){
-						echo "Usuario não existe";
+						echo "Usuario nï¿½o existe";
 						}else if($cont == 1){
 						$senha1 = rand(1111,9999);
 						$senha2 = md5($senha1);
 						mysql_query("UPDATE usuario SET senha = '$senha2' WHERE email='$this->Email' ");
-						mail($this->Email, "Esqueceu sua senha?", "Sua nova senha é $senha1 ");
+						mail($this->Email, "Esqueceu sua senha?", "Sua nova senha ï¿½ $senha1 ");
 										
 					
 						}else{
@@ -104,7 +104,7 @@ class Usuario {
 		$consulta = mysql_query("SELECT * FROM usuario WHERE email='$this->email' AND email NOT LIKE '$email_atual' ");
 		$conConsulta = mysql_num_rows($consulta);
 		if($conConsulta <> 0){
-		echo "Não foi possivel fazer a atualização, provavelmente o email já está cadastrado. Utilize a opcao voltar no seu navegador";
+		echo "Nï¿½o foi possivel fazer a atualizaï¿½ï¿½o, provavelmente o email jï¿½ estï¿½ cadastrado. Utilize a opcao voltar no seu navegador";
 		exit;
 		} 
 		
@@ -115,7 +115,7 @@ class Usuario {
 
 		
 		if($conConsulta <> 0){
-		echo "Não foi possivel fazer a atualização, provavelmente o usuario já está cadastrado. Utilize a opcao voltar no seu navegador";
+		echo "Nï¿½o foi possivel fazer a atualizaï¿½ï¿½o, provavelmente o usuario jï¿½ estï¿½ cadastrado. Utilize a opcao voltar no seu navegador";
 		exit;
 		} 	
 		

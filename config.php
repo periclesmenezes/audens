@@ -1,6 +1,6 @@
-<?
-$host = "localhost";
-$usuario = "";
+<?php
+$host = "127.0.0.1";
+$usuario = "root";
 $senha = "";
 $banco = "chat";
 
@@ -25,7 +25,7 @@ function __construct(){}
 
 
 	function BoasVindas(){
-	echo "Olá <b>$_COOKIE[usuario]</b> Seu ultimo acesso foi em: $_COOKIE[dt_ult_acesso]</b>";
+	echo "Ola <b>$_COOKIE[usuario]</b> Seu ultimo acesso foi em: $_COOKIE[dt_ult_acesso]</b>";
 	}
 
 

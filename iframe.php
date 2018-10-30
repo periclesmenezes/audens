@@ -1,4 +1,4 @@
-<?
+<?php
 include_once("config.php");
 include_once("Class.chat.php");
 $chat = new Conversas;
@@ -12,26 +12,26 @@ $chat = new Conversas;
 </style>
 
 <script type="text/JavaScript">
-<!--
+
 function timedRefresh(timeoutPeriod) {
 	setTimeout("location.reload(true);",timeoutPeriod);
 }
-//   -->
+   
 </script>
-<body onload="JavaScript:timedRefresh(<? echo $Refresh; ?>);">
+<body onload="JavaScript:timedRefresh(<?php echo $Refresh; ?>);"</body>
 
 
 <table valign='top' align='center' width='100%'>
 	<tr>
 		<td align='left'>
 <div id='usuarios' >
-<? $chat->Atualizar(); ?>
+<?php $chat->Atualizar(); ?>
 </div>	
 	</td>
 		<td valign='top' width='150px' align='right'><div id='usuarios' >		
 <div align='center'><b>Usuarios Online</b></div>
 <hr>
-<div align='center'><? $chat->UserOnline(); ?></div>
+<div align='center'><?php $chat->UserOnline(); ?></div>
 </div>
 		</td>
 	</tr>

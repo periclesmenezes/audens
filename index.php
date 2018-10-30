@@ -1,4 +1,4 @@
-<?
+<?php
 ob_start();
 include_once("config.php");
 $Config = new Config();
@@ -26,13 +26,13 @@ $chat->Adicionar($_POST['chatear'], $destino);
 <html>
 
 <head>
-<title>Em construçao.. </title>
+<title> Audens </title>
 <script type="text/javascript" src="ajax.js"></script>
 </head>
 <body onLoad="document.formulario.chatear.focus();">
 
 
-<div align='right' > <? $Config->BoasVindas(); ?> <a href='index.php'>Atualizar</a> - <a href='meus_dados.php'>Meus Dados</a> - <a href='logar.php?sair=0'>Sair [x]</a></div><br>
+<div align='right' > <?php $Config->BoasVindas(); ?> <a href='index.php'>Atualizar</a> - <a href='meus_dados.php'>Meus Dados</a> - <a href='logar.php?sair=0'>Sair [x]</a></div><br>
 	<table align='center'>
 		<tr>
 			<td>
@@ -42,12 +42,12 @@ $chat->Adicionar($_POST['chatear'], $destino);
 			<tr>
 			<td>
 			</br>
-			<div id='emoticon' align='center' ><? $img = new Emoticon; $img->Gerar(); ?></div>
+			<div id='emoticon' align='center' ><?php $img = new Emoticon; $img->Gerar(); ?></div>
 			<form action='index.php' name='formulario' method='post' ><hr>
 			<b>Digite aqui sua Mensagem: </b><input type='text' id='chatear' name='chatear' size='40' />
 			<select id='destino' name='destino' >
 				<option selected='selected' value='Todos'>Todos</option>
-				<?   $users = new Conversas; $users->ListaOnline(); ?>
+				<?php  $users = new Conversas; $users->ListaOnline(); ?>
 			
 			</select>
 			

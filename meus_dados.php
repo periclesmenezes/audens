@@ -1,4 +1,4 @@
-<?
+<?php
 ob_start();
 
 if(!isset($_COOKIE['usuario'])){
@@ -20,11 +20,11 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 	<table align='center'>
 		<tr>
 			<td><b>Email: </b></td>
-			<td><input size='30px' value='<? echo $Dados->ListarDados('email'); ?>' type='text' name='email' id='email' /><td>
+			<td><input size='30px' value='<?php echo $Dados->ListarDados('email'); ?>' type='text' name='email' id='email' /><td>
 		</tr>	
 		<tr>
 			<td><b>Usuario: </b></td>
-			<td><input value='<? echo $Dados->ListarDados('usuario'); ?>' size='30px' type='text' name='usuario' id='usuario' /><td>
+			<td><input value='<?php echo $Dados->ListarDados('usuario'); ?>' size='30px' type='text' name='usuario' id='usuario' /><td>
 		</tr>	
 
 		<tr>

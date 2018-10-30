@@ -1,4 +1,4 @@
-<?
+<?Php
 include_once("config.php");
 include_once("Class.usuario.php");
 
