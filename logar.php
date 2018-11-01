@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" href="css/estilo.php" type="text/css" />
+
 <?php
 ob_start();
 include_once("config.php");	
@@ -19,7 +22,6 @@ $dt_ult_acesso = date("Y/m/d H:m:s");
 mysql_query("INSERT INTO conversas VALUES ('', 'Robo','todos', 'O usuario $_COOKIE[usuario] deixou o chat!','".date("Y-m-d H:i")."', '".time()."')");
 
 }
-
 if(isset($_POST['entrar'])){
 $usuario = AntiSql($_POST['usuario']);
 $senha = md5($_POST['senha']);
@@ -40,7 +42,6 @@ $cor = AntiSql($_POST['cor']);
 	}elseif($cor == "preto"){
 	$cor = "000000";
 	}
-
 
 
 $sql = mysql_query("SELECT * FROM usuario WHERE usuario='$usuario' AND senha='$senha' ");
@@ -71,13 +72,13 @@ if($cont == 0){
 
 if(!isset($_COOKIE['usuario'])){
 echo "
-<div align='center'>
-<h2><!-- CHAT DA HORA --></h2>
+<div align='center' id='login1'>
+<h2>CHAT Audens </h2>
 <form action='logar.php' method='post'>
 <table>
 	<tr>
 		<td>
-		<b>Digite seu Usuario:</b>
+		<b> Usuario:</b>
 		</td>
 		<td>
 		<input type='text' name='usuario' id='usuario' />
@@ -85,7 +86,7 @@ echo "
 	</tr>
 	<tr>
 		<td>
-		<b>Digite sua Senha: </b> 
+		<b> Senha: </b> 
 		</td>
 
 		<td>
@@ -93,7 +94,7 @@ echo "
 		</td>
 	</tr>
 	<tr>
-	<td><b>Cor preferida?</b></td>
+	<td><b>Cor :</b></td>
 	<td>
 	<select id='cor' name='cor'>
 		<option value='preto' >Preto</option>
@@ -105,10 +106,10 @@ echo "
 	</tr>
 	<tr>
 		<td>
-		<a href='esqueci_senha.php'> Esqueci Minha Senha </a>
+		<a href='esqueci_senha.php'> Recuperar Senha </a>
 		</td>		
 		<td>
-		<a href='cad_usu.php'> Quero me Cadastrar </a>
+		<a href='cad_usu.php'> Cadastrar </a>
 			</td>
 	</tr>	
 		<tr>
@@ -120,7 +121,8 @@ echo "
 		<input type='submit' name='entrar' id='entrar' value='Entrar' ></br>
 		</td>
 		<td aligh='left'>
-		<input type='button' name='sair' onclick='window.close();' id='sair' value='Sair [x]' ></br>
+
+		<input type='button' name='sair' onclick='window.close();' id='sair' value='Sair' ></br>
 		</td>
 	</tr>
 </table>	
