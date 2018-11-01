@@ -19,7 +19,7 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 
 <form action='meus_dados.php' method='post' id='login1'>
 	<table align='center'>
-		<tr>
+		<tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr>
 			<td><b>Email: </b></td>
 			<td><input size='30px' value='<?php echo $Dados->ListarDados('email'); ?>' type='text' name='email' id='email' /><td>
 		</tr>	
