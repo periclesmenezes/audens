@@ -27,7 +27,7 @@ $chat->Adicionar($_POST['chatear'], $destino);
 
 <head>
 <title> Audens </title>
-<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript" src="../js/ajax.js"></script>
 </head>
 <body onLoad="document.formulario.chatear.focus();">
 
