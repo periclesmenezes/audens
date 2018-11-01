@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/estilo.php" type="text/css" />
 <?php
 ob_start();
 
@@ -16,7 +17,7 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 
 ?>
 
-<form action='meus_dados.php' method='post'>
+<form action='meus_dados.php' method='post' id='login1'>
 	<table align='center'>
 		<tr>
 			<td><b>Email: </b></td>
@@ -33,8 +34,8 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 		</tr>	
 
 		<tr>
-			<td><b>Confirmar? </b></td>
-			<td><input size='30px' type='submit' value='Sim :D' name='editar' id='editar' /><td>
+			<td><b>Confirmar: </b></td>
+			<td><input size='30px' type='submit' value='Sim' name='editar' id='editar' /><td>
 		</tr>
 		</table>
 </form>
