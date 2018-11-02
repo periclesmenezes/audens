@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="css/estilo.php" type="text/css" />
 <?php
 include_once("config.php");
 include_once("Class.usuario.php");
@@ -20,9 +22,9 @@ if(isset($_POST['cadastrar'])){
 
 ?>
 
-<form action='cad_usu.php' method='post'>
+<form action='cad_usu.php' method='post' id='login1'>
 <table align='center'>
-	<tr>
+	<tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr>
 	<td><b>Email:</b></td>
 	<td><input type='text' id='email' name='email' />(Para recuperar senha)</td>
 	</tr>
