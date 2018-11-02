@@ -44,7 +44,7 @@ $chat->Adicionar($_POST['chatear'], $destino);
 			<tr>
 			<td>
 			</br>
-			<div id='emoticon' align='center' ><?php $img = new Emoticon; $img->Gerar(); ?></div>
+			<!--<div id='emoticon' align='center' ><?php $img = new Emoticon; $img->Gerar(); ?></div>-->
 			<form action='index.php' name='formulario' method='post' ><hr>
 			<b>Mensagem: </b><input type='text' id='chatear' name='chatear' size='40' />
 			<select id='destino' name='destino' >
