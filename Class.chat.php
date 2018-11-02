@@ -105,7 +105,7 @@ class Conversas {
 		
 		$usuarios = mysql_query("SELECT * FROM online order by usuario asc");
 		while($res = mysql_fetch_assoc($usuarios)){
-			if($res[usuario] == $_COOKIE[destino]){
+			if($res['usuario'] == $_COOKIE['destino']){
 			echo "<option selected='selected' value='".$res['usuario']."'>$res[usuario]</option>";
 				}else{
 			echo "<option value='".$res['usuario']."'>$res[usuario]</option>";				
