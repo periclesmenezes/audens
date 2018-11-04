@@ -1,4 +1,10 @@
-<style type="text/css">
+*{
+  padding:0px;
+  margin: 0px;
+}
+html{
+  font: 12pt Arial;
+}
 body{
   background-color: rgba(255,0,0,0.5);  
   font-size:12px;
@@ -13,5 +19,70 @@ body{
 .asteristico{
   color:#F00;
 }
-
-</style>
+/* Tela Principal */
+.menu {
+  font: 10pt Arial;
+  color: white;
+  background-color: #aaaff3;
+  display: block;
+  position: relative;
+  padding: 5px;
+  box-align: right; 
+  height: auto;
+}
+.laterale {
+  width: 25%;
+  height: auto;
+  float: left;
+}
+.laterald {
+  width: 75%;
+  height: auto;
+  float: right;
+}
+.centro {
+  width: 50%;
+  height: auto;
+  float: center;
+}
+.div-usuarios {
+  width: 25%;
+  height: auto;
+  float: right;
+}
+.div-chat {
+  width: 75%;
+  height: auto;
+  float: left;
+}
+a:link {
+  color: blue; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.t01 {
+  width: 100%;
+  height: 70%;
+}
+.t02 {
+  width: 100%;
+  height: auto;
+}
