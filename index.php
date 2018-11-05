@@ -50,6 +50,7 @@ if(isset($_POST['enviar'])){
 					</div>
 					<div>
 						<form action='index.php' name='formulario' method='post'> <hr>
+						<br>
 							<b>Mensagem: </b><input type='text' id='chatear' name='chatear' size='40' />
 							<select id='destino' name='destino' >
 								<option selected='selected' value='Todos'>Todos</option>
@@ -58,6 +59,7 @@ if(isset($_POST['enviar'])){
 							<input align='left' id='enviar' name='enviar' value='Enviar' size='' type='submit' size='10px' />
 						</form>
 					</div>
+					<br>
 					<button id="gravar">
 						<i class="fa fa-microphone"></i>
 					</button>
