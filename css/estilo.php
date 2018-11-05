@@ -12,6 +12,14 @@ $cor_fundo = '#6D6E71';
   font-family: cursive;
 }
 
+#sala2 {
+  background: #6D6E71;
+   position: relative;	
+  font-size: 12px;
+  font-family: cursive;
+}
+
+
 #sala1 {
   background: #EF4A25;
   position: relative;	

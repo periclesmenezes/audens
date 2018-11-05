@@ -27,31 +27,26 @@ if(isset($_POST['enviar'])){
 	<title> Audens </title>
 	<script type="text/javascript" src="../js/ajax.js"></script>
 </head>
-<body onLoad="document.formulario.chatear.focus();">
+<body onLoad="document.formulario.chatear.focus();"id="sala2">
 <!-- Menu Superior -->
-	<div class="menu" align='right'>
+	<div class="menu" align='right' id='sala1'>
 		<?php $Config->BoasVindas(); ?> 
 		<a href='index.php'>Atualizar</a> - 
 		<a href='meus_dados.php'>Meus Dados</a> - 
 		<a href='logar.php?sair=0'>Sair [x]</a>
 	</div>
 <!-- Tela Principal -->
-	<div class='conteiner' width="100%">
-		<div class="laterale">
-			<?php $Config->BoasVindas(); ?>
-			<br/>
-			<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
-		</div>
-		<div class="laterald">
+	
+		<div class="laterald"id="sala2">
 			<div class='div-chat'>
 				<div class='t01'>
 					<iframe  name="iframe" id="iframe" width='100%' height='100%' src='iframe.php'></iframe>
 				</div>
 				<div class='t02'>
 				<center>
-					<h2> LISTA DE ICONES </h2>
+				<!--	<h2> LISTA DE ICONES </h2>-->
 					<div>
-						<?php $img = new Emoticon; $img->Gerar(); ?>
+						<!--?php $img = new Emoticon; $img->Gerar(); ?-->
 					</div>
 					<div>
 						<form action='index.php' name='formulario' method='post'> <hr>
