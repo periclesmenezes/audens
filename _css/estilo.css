@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*** Configurações Gerais ***/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #808080;
+    color: black;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/*** Específicas ***/
+div#conteiner{
+    width: 1000px;
+    background-color: #EF4A25;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+/*** Cabecalho ***/
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 100px;
+}
+header#cabecalho h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    padding: 15px;
+    margin: 5px 0px 0px 0px;
+}
+header#cabecalho h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin: 0px 0px 0px 25px;
+}
+/*** Menu ***/
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0px;
+    text-align: right;
+}
+nav#menu li{
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+    transition: background-color 2s;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: darkblue;
+}
+nav#menu a:hover{
+    color: blue;
+    text-decoration: underline;
+    background-color: white;
+}
+
+/** Configurações da Sala de Bate Papo **/
+section#batepapo{
+    display: block;
+    width: 75%;
+    float: left;
+    border: 1px solid #606060;
+    padding: 5px;
+}
+section#mensagens{
+    display: block;
+    float: unset;
+    margin: auto;
+    widows: 100%;
+    height: 50%;
+}
+section#mensagens iframe{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: none;
+}
+
+/** Configurações da Sala de Usuários **/
+aside#usuarios{
+    display: block;
+    width: 22%;
+    float: right;
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+header#ucabecalho{
+    border-bottom: 1px #606060 solid;
+    height: auto;
+}
+header#ucabecalho h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    padding: 15px;
+    margin-top: 5px;
+}
+aside#usuarios iframe{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: none;
+}
+
+/** Configurações do Roda pé **/
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10pt;
+    text-align: center;
+}
