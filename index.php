@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/estilo.php" type="text/css" />
+<link rel="stylesheet" href="css/sala1.php" type="text/css" />
 <?php
 ob_start();
 include_once("config.php");
@@ -37,7 +37,7 @@ if(isset($_POST['enviar'])){
 		</hgroup>
 		<nav id="menu">
 			<h1>Menu Principal</h1>
-			<ul type="circle">
+			<ul type="circle" id='sala1'>
 				<li><?php $Config->BoasVindas(); ?></li>
 				<li><a href='index.php'>Atualizar</a></li>
 				<li><a href='meus_dados.php'>Meus Dados</a></li>

@@ -100,8 +100,9 @@ section#mensagens iframe{
 aside#usuarios{
     display: block;
     width: 22%;
+    height: 49%;
     float: right;
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 5px;
     margin-top: 5px;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);

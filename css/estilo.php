@@ -1,5 +1,5 @@
 <?php
-$cor_fundo = '#6D6E71';
+$cor_fundo = '#FFFFFF';
 //$cor_texto = '#0033897';
 //$imagem_link = '../img/link.jpg'
 ?>
