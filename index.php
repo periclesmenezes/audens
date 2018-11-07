@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/estilo.php" type="text/css" />
 <?php
 ob_start();
 include_once("config.php");
@@ -55,13 +56,13 @@ if(isset($_POST['enviar'])){
 								<option selected='selected' value='Todos'>Todos</option>
 								<?php  $users = new Conversas; $users->ListaOnline(); ?>
 							</select>
-							<input align='left' id='enviar' name='enviar' value='Enviar' size='' type='submit' size='10px' />
+							<input align='left' id='css3button' name='enviar' value='Enviar' size='' type='submit' size='10px' />
 		</form>	
 		<br/>
 		<button id="gravar">
 			<i class="fa fa-microphone"></i>
 		</button>
-		<p id="status" style="display: block; text-align: center;"> <span>Parado</span></p>
+		<h4 id="status" style="display: block; text-align: center;"> <span>Click para acionar</span>
 		</center>
 	</section>
 	<aside id="usuarios"><center>
@@ -110,13 +111,13 @@ if(isset($_POST['enviar'])){
 				try {
 				//Ativa o microfone.
 					recognizer.start();
-					document.getElementById("status").getElementsByTagName("span")[0].className = "Executando";
-					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Executando";
+					document.getElementById("status").getElementsByTagName("span")[0].className = "Record";
+					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Record";
 				} catch(ex) {
 				//Caso já esteja ativo o microfone, para.
 					recognizer.stop();
-					document.getElementById("status").getElementsByTagName("span")[0].className = "";
-					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Parado";
+					document.getElementById("status").getElementsByTagName("span")[0].className = "Stop";
+					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Stop";
 				}
 			}
 			)

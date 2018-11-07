@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/estilo.php" type="text/css" />
 <?php
 ob_start();
 include_once("funcao.php");
@@ -48,7 +49,7 @@ class Conversas {
 			
 		while($res = mysql_fetch_assoc($conversa)){
 			if(strtolower($res['destino']) !== "sistema" && strtolower($res['destino']) !== "todos" ){
-				echo "<b>".$res['usuario']." <font color='#00ff00'> -> $res[destino] (reservado) </font>  </b> - ";
+				echo "<b>".$res['usuario']." <font color='#00ff00'> $res[destino] (reservado) </font>  </b> - ";
 			}else{
 				echo "<b>".$res['usuario']."</b> - ";
 			}
