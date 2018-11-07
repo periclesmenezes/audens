@@ -22,7 +22,7 @@ if(isset($_POST['enviar'])){
 <head>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
 	<title> Audens </title>
 	<script type="text/javascript" src="js/ajax.js"></script>
 	<script src="js/js.js"></script>
@@ -32,7 +32,7 @@ if(isset($_POST['enviar'])){
 	<header id="cabecalho">
 		<hgroup>
 			<h1>Audens</h1>
-			<h2>Tecnologia em transformação</h2>
+			<h2>Sala de Entrevistas</h2>
 		</hgroup>
 		<nav id="menu">
 			<h1>Menu Principal</h1>
@@ -40,7 +40,7 @@ if(isset($_POST['enviar'])){
 				<li><?php $Config->BoasVindas(); ?></li>
 				<li><a href='index.php'>Atualizar</a></li>
 				<li><a href='meus_dados.php'>Meus Dados</a></li>
-				<li><a href='logar.php?sair=0'>Sair [x]</a></li>
+				<li><a href='logar.php?sair=0'>Sair</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -72,7 +72,7 @@ if(isset($_POST['enviar'])){
 		</center>
 	</aside>
 	<footer id="rodape">
-		<p>Desenvolvido por Péricles Filho & Associados. Versão: Novembro/2018</p>
+		<p>Desenvolvido por Péricles Filho & Associados. Versão: V1.1.001</p>
 	</footer>
 </div>
 </body>
