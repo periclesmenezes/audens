@@ -18,10 +18,10 @@ if(isset($_POST['enviar'])){
 
 ?>
 
-<html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="_css/estilo.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<title> Audens </title>
 	<script type="text/javascript" src="js/ajax.js"></script>
@@ -122,4 +122,4 @@ if(isset($_POST['enviar'])){
 			)
 	}
 </script>
-</html>
+

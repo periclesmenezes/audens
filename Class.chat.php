@@ -13,7 +13,7 @@ class Conversas {
 		$this->conversa = AntiSql($conversa);
 		$this->destino = AntiSql($destino);
 		if(empty($this->conversa)){
-			echo "<script>alert('ERRO conversa nao pode ficar vasia'); location.href='index.php'; </script>";
+			echo "<script>alert('ERRO conversa nao pode ficar vazia'); location.href='index.php'; </script>";
 			exit;
 		}
 		$usuario = "<font color=\'$_COOKIE[cor_preferida]\'>$_COOKIE[usuario]</font>";
