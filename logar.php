@@ -5,10 +5,7 @@
 ob_start();
 include_once("config.php");	
 include_once("funcao.php");	
-if(file_exists("leiame.txt")){
-echo " </a></h1>";
-exit;
-}
+include_once("logar.php");	
 
 
 
