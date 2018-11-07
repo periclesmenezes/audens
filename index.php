@@ -51,6 +51,7 @@ if(isset($_POST['enviar'])){
 		</section>
 		<br/>
 		<form action='index.php' name='formulario' method='post'> <hr>
+			<br>
 			<b>Mensagem: </b><input type='text' id='chatear' name='chatear' size='40' />
 							<select id='destino' name='destino' >
 								<option selected='selected' value='Todos'>Todos</option>
