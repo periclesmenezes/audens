@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/sala1.php" type="text/css" />
+<link rel="stylesheet" href="css/fade.css" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 <?php
 ob_start();
@@ -74,7 +75,7 @@ if(isset($_POST['enviar'])){
 		</form>	
 		<br/>
 		<button id="gravar">
-			<i class="fa fa-microphone"></i>
+			<i><span><img src="imagens/logo/microfone.gif" ..... width="22px" height="22px" class="fa fa-microphone"></span></i>
 		</button>
 		<h4 id="status" style="display: block; text-align: center;"> <span>Click para acionar</span>
 		</center>
