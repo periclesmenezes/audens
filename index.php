@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/sala1.php" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 <?php
 ob_start();
 include_once("config.php");
@@ -30,20 +31,28 @@ if(isset($_POST['enviar'])){
 </head>
 <body onLoad="document.formulario.chatear.focus();" id="sala2">
 <div id="conteiner">
-	<header id="cabecalho">
+	<header id="cabecalho" style="height: 130px;">
+		
 		<hgroup>
-			<h1>Audens</h1>
-			<h2>Sala de Entrevistas</h2>
+			<img src="imagens/logo/LOGO AUDENS GROUP3.png" style="border-radius: 7px; margin:9px 0px -5px 17px;" width="220px" height="55px">
+		<ul  style="padding-left: 28px; margin-top: 14px; margin-bottom: -8px; list-style-type: none; font-family: 'Sanchez', serif;"><li style="margin-top: 18px;"><?php $Config->BoasVindas(); ?></li></ul>
+			<h2 style="margin-top: 16px; margin-left: 19px;">Sala de Entrevistas</h2>
 		</hgroup>
-		<nav id="menu">
+		<aside>
+		<nav id="menu" style="width: 300px; height: 100px; margin-left: 729px; ">
+				
 			<h1>Menu Principal</h1>
-			<ul type="circle" id='sala1'>
-				<li><?php $Config->BoasVindas(); ?></li>
-				<li><a href='index.php'>Atualizar</a></li>
+			<ul type="circle" id='sala1' style="margin-top: 40px; font-family: 'Sanchez', serif;">
+				<li><a href='index.php' >Atualizar</a></li>
 				<li><a href='meus_dados.php'>Meus Dados</a></li>
 				<li><a href='logar.php?sair=0'>Sair</a></li>
 			</ul>
-		</nav>
+			
+		</nav></aside>
+			
+			
+			
+		
 	</header>
 	<section id="batepapo"><center>
 		<section id="mensagens">
@@ -51,13 +60,17 @@ if(isset($_POST['enviar'])){
 		</section>
 		<br/>
 		<form action='index.php' name='formulario' method='post'> <hr>
-			<br>
-			<b>Mensagem: </b><input type='text' id='chatear' name='chatear' size='40' />
-							<select id='destino' name='destino' >
+			<br><div>
+							
+								<b id="mensagem" style="font-family: 'Sanchez', serif;">Mensagem: </b><input type='text' class='caixa_mensagem' id='chatear' placeholder="Digite aqui..." name='chatear' style="width: 426px; border-radius: 5px;" />
+							
+							<select class='div-select' id='destino' name='destino' >
 								<option selected='selected' value='Todos'>Todos</option>
 								<?php  $users = new Conversas; $users->ListaOnline(); ?>
 							</select>
-							<input align='left' id='css3button' name='enviar' value='Enviar' size='' type='submit' size='10px' />
+							<!--input align='left' class='button' id='css3button' name='enviar' value='Enviar' type='submit'/-->
+								<button class="button" id='css3button' value='Enviar' type='submit' name='enviar'><span>Enviar </span></button>
+								</div>
 		</form>	
 		<br/>
 		<button id="gravar">
@@ -67,7 +80,7 @@ if(isset($_POST['enviar'])){
 		</center>
 	</section>
 	<aside id="usuarios"><center>
-		<header id="ucabecalho">
+		<header id="ucabecalho" style="height: 48px;">
 			<h1>Usuários Online</h1>
 		</header>
 		<iframe name='iframe-usu-online' id="iusuarios" src='usuarios-online.php'></iframe>

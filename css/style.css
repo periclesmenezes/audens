@@ -5,6 +5,14 @@ body{
     background-color: #808080;
     color: black;
 }
+
+body b{
+   font-family: 'Courier New', Courier, monospace; 
+    align-self: 
+    color: #FFF;
+    font-size: 16px;
+}
+
 p{
     text-align: justify;
     text-indent: 20px;
@@ -20,6 +28,7 @@ a:hover{
 /*** Específicas ***/
 div#conteiner{
     width: 1000px;
+    border-radius: 20px;
     background-color: #EF4A25;
     margin: 0px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
@@ -35,7 +44,7 @@ header#cabecalho h1{
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    padding: 15px;
+    padding: 8px 28px 0px;
     margin: 5px 0px 0px 0px;
 }
 header#cabecalho h2{
@@ -137,8 +146,36 @@ footer#rodape p{
     text-align: center;
 }
 
+.button {
+      border-radius: 7px;
+      background-color: #8C9BB2;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      padding: 9px 9px 7px 7px;
+      width: 91px;
+      transition: all 0.5s;
+      cursor: pointer;
+    margin: 5px;
+}
+
 button#css3button {
-	font-family: Arial, Helvetica, sans-serif;
+      border-radius: 7px;
+      background-color: #8C9BB2;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      font-color:
+      /*padding: 10px 10px 8px 8px;*/
+      padding:7px 7px 6px 6px
+      /*width: 99px;*/
+      width: 91px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+	/*font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #ffffff;
 	padding: 10px 20px;
@@ -167,5 +204,57 @@ button#css3button {
 		inset 0px -1px 0px rgba(227,170,171,0.7);
 	text-shadow:
 		0px -1px 1px rgba(000,000,000,0.2),
-		0px 1px 0px rgba(255,255,255,0.3);
+		0px 1px 0px rgba(255,255,255,0.3);*/
+}
+
+.
+.caixa_mensagem{
+    border-radius: 7px;
+    size: 40px;
+    width: 415px;
+    
+    
+}
+
+.div-select  {
+    border-radius: 7px;
+     width:100px;  
+    overflow:hidden;
+      background: url("icones/seta_para_expandir.png") no-repeat #8C9BB2; 
+      background-position: 205px center;  
+      width: 100px;
+      height: 36px; 
+      font-family:Arial, Helvetica, sans-serif; 
+      font-size:14px; 
+      padding:9px 9px 7px 7px; 
+      color:#fff; 
+      text-indent: 0.01px; 
+      text-overflow: "";  
+      select::-ms-expand {display: none;} 
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
