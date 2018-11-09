@@ -24,6 +24,7 @@ if(isset($_POST['enviar'])){
 <head>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/button_style.css"  />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
 	<title> Audens </title>
 	<script type="text/javascript" src="js/ajax.js"></script>
@@ -35,23 +36,36 @@ if(isset($_POST['enviar'])){
 		
 		<hgroup>
 			<img src="imagens/logo/LOGO AUDENS GROUP3.png" style="border-radius: 7px; margin:9px 0px -5px 17px;" width="220px" height="55px">
+							<section class="portfolio-experiment" id="Atualizar">
+									  <a href='index.php'>
+										<span class="text">Atualizar</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+							</section>
+								<section class="portfolio-experiment" id="meusdados">
+									  <a href='meus_dados.php'>
+										<span class="text">Meus Dados</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
+								<section class="portfolio-experiment" id="sair">
+									  <a href='logar.php?sair=0'>
+										<span class="text" >Sair</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
 		<ul  style="padding-left: 28px; margin-top: 14px; margin-bottom: -8px; list-style-type: none; font-family: 'Sanchez', serif;"><li style="margin-top: 18px;"><?php $Config->BoasVindas(); ?></li></ul>
 			<h2 style="margin-top: 16px; margin-left: 19px;">Sala de Entrevistas</h2>
 		</hgroup>
-		<aside>
-		<nav id="menu" style="width: 300px; height: 100px; margin-left: 729px; ">
-				
-			<h1>Menu Principal</h1>
-			<ul type="circle" id='sala1' style="margin-top: 40px; font-family: 'Sanchez', serif;">
-				<li><a href='index.php' >Atualizar</a></li>
-				<li><a href='meus_dados.php'>Meus Dados</a></li>
-				<li><a href='logar.php?sair=0'>Sair</a></li>
-			</ul>
-			
-		</nav></aside>
-			
-			
-			
 		
 	</header>
 	<section id="batepapo"><center>
@@ -70,7 +84,8 @@ if(isset($_POST['enviar'])){
 							</select>
 							<!--input align='left' class='button' id='css3button' name='enviar' value='Enviar' type='submit'/-->
 								<button class="button" id='css3button' value='Enviar' type='submit' name='enviar'><span>Enviar </span></button>
-								</div>
+								
+				</div>
 		</form>	
 		<br/>
 		<button id="gravar">

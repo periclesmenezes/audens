@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" href="css/estilo.php" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 
 <?php
 ob_start();
@@ -69,10 +70,12 @@ if($cont == 0){
 
 if(!isset($_COOKIE['usuario'])){
 echo "
+<link rel='stylesheet' href='css/style.css' type='text/css' />
 <div align='center' id='login1'>
-<h2>CHAT Audens </h2>
-<form action='logar.php' method='post'>
-<table>
+<link rel='stylesheet' href='css/button_style.css'  />
+<img src='imagens/logo/LOGO AUDENS GROUP3.png' style='border-radius: 7px; margin:40px 17px -51px 17px;' width='220px' height='55px'>
+<form style='padding-top: 84px;' action='logar.php' method='post'>
+<table style='font-family: 'Sanchez', serif;'>
 	<tr>
 		<td>
 		<b> Usuario:</b>
@@ -91,37 +94,40 @@ echo "
 		</td>
 	</tr>
 	<tr>
-	<td><b>Cor :</b></td>
-	<td>
-	<select id='cor' name='cor'>
-		<option value='preto' >Preto</option>
-		<option value='azul' >Azul</option>
-		<option value='vermelho' >Vermelho</option>	
-	</select>
-	
-	</td>	
-	</tr>
-	<tr>
+		<td><b>Cor :</b></td>
 		<td>
-		<a href='esqueci_senha.php'> Recuperar Senha </a>
-		</td>		
-		<td>
-		<a href='cad_usu.php'> Cadastrar </a>
-			</td>
-	</tr>	
-		<tr>
-	<td></td>
-	<td></td>	
-	</tr>
-	<tr>
-		<td align='right' >
-		<input type='submit' name='entrar' id='entrar' value='Entrar' ></br>
-		</td>
-		<td aligh='left'>
+		<select id='cor' name='cor'>
+			<option value='preto' >Preto</option>
+			<option value='azul' >Azul</option>
+			<option value='vermelho' >Vermelho</option>	
+		</select>
 
-		<input type='button' name='sair' onclick='window.close();' id='sair' value='Sair' ></br>
-		</td>
+		</td>	
 	</tr>
+	
+	<section class='portfolio-experiment' id='login_recuperar'>
+									  <a href='esqueci_senha.php'>
+										<span class='text'>Recuperar Senha</span>
+										<span class='line -right'></span>
+										<span class='line -top'></span>
+										<span class='line -left'></span>
+										<span class='line -bottom'></span>
+									  </a>
+							</section>
+							<section class='portfolio-experiment' id='login_cadastrar'>
+									  <a href='cad_usu.php'>
+										<span class='text'>Cadastrar</span>
+										<span class='line -right'></span>
+										<span class='line -top'></span>
+										<span class='line -left'></span>
+										<span class='line -bottom'></span>
+									  </a>
+							</section>
+	
+	<button class='button' id='css3button_login_entrar' type='submit' value='Entrar' name='entrar' ><span>Entrar </span></button>
+	
+	<button class='button' id='css3button_login_sair' type='button' name='sair' onclick='window.close();' id='sair' value='Sair'><span>Sair </span></button>
+	
 </table>	
 		</form>
 </div>
