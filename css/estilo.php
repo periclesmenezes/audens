@@ -6,8 +6,8 @@ $cor_fundo = '#FFFFFF';
 #login1 {
   background: #EF4A25;
   border-radius: 9px;
-  width: 380px;
-  height: 308px;
+  width: 650px;
+  height: 407px;
   margin:11.2% 35%;
   position: relative;	
   font-size: 12px;

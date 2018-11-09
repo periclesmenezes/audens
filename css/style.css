@@ -154,13 +154,60 @@ footer#rodape p{
       text-align: center;
       font-size: 14px;
       padding: 9px 9px 7px 7px;
-      width: 91px;
       transition: all 0.5s;
       cursor: pointer;
     margin: 5px;
 }
 
 button#css3button {
+      border-radius: 7px;
+      background-color: #8C9BB2;
+      border: none;
+      color: #FFFFFF;
+    width: 91px;
+      text-align: center;
+      font-size: 14px;
+      font-color:
+      padding:7px 7px 6px 6px
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+	
+}
+
+button#css3button_login_recuperar {
+      border-radius: 7px;
+      background-color: #8C9BB2;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      font-color:
+      padding:7px 7px 6px 6px
+      width: 91px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+	
+}
+
+button#css3button_login_entrar {
+      border-radius: 7px;
+      background-color: #8C9BB2;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      font-color:
+      padding:7px 7px 6px 6px
+      width: 91px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+	
+}
+
+button#css3button_login_sair {
       border-radius: 7px;
       background-color: #8C9BB2;
       border: none;
