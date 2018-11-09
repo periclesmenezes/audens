@@ -5,8 +5,10 @@ $cor_fundo = '#FFFFFF';
 ?>
 #login1 {
   background: #EF4A25;
-  width: 100%;
-  height: 191px;
+  border-radius: 9px;
+  width: 380px;
+  height: 308px;
+  margin:11.2% 35%;
   position: relative;	
   font-size: 12px;
   font-family: cursive;
