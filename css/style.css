@@ -193,7 +193,7 @@ button#css3button_login_recuperar {
 
 button#css3button_login_entrar {
       border-radius: 7px;
-      background-color: #8C9BB2;
+      background-color: #747474;
       border: none;
       color: #FFFFFF;
       text-align: center;
@@ -203,13 +203,12 @@ button#css3button_login_entrar {
       width: 91px;
       transition: all 0.5s;
       cursor: pointer;
-      margin: 5px;
-	
+      margin: 43px;
 }
 
 button#css3button_login_sair {
       border-radius: 7px;
-      background-color: #8C9BB2;
+      background-color: #747474;
       border: none;
       color: #FFFFFF;
       text-align: center;
@@ -219,7 +218,7 @@ button#css3button_login_sair {
       width: 91px;
       transition: all 0.5s;
       cursor: pointer;
-      margin: 5px;
+      margin: 30px;
 	
 }
 

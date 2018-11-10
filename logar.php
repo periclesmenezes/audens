@@ -74,11 +74,11 @@ echo "
 <div align='center' id='login1'>
 <link rel='stylesheet' href='css/button_style.css'  />
 <img src='imagens/logo/LOGO AUDENS GROUP3.png' style='border-radius: 7px; margin:40px 17px -51px 17px;' width='220px' height='55px'>
-<form style='padding-top: 84px;' action='logar.php' method='post'>
+<form style='padding-top: 120px;' action='logar.php' method='post'>
 <table style='font-family: 'Sanchez', serif;'>
 	<tr>
 		<td>
-		<b> Usuario:</b>
+		<b> Usu&aacute;rio:</b>
 		</td>
 		<td>
 		<input type='text' name='usuario' id='usuario' />
@@ -124,12 +124,15 @@ echo "
 									  </a>
 							</section>
 	
+	
+	
+</table>	
+	
 	<button class='button' id='css3button_login_entrar' type='submit' value='Entrar' name='entrar' ><span>Entrar </span></button>
 	
 	<button class='button' id='css3button_login_sair' type='button' name='sair' onclick='window.close();' id='sair' value='Sair'><span>Sair </span></button>
-	
-</table>	
-		</form>
+
+</form>
 </div>
 ";
 }else{
