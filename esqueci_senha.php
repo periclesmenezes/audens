@@ -31,7 +31,7 @@ $Resetar->EsqueciSenha($_POST['usuario'], $_POST['email']);
 			<td><input type='text' name='usuario' id='usuario' /><td>
 		</tr>	<br>	<tr>
 			<td><b></b></td>
-			<td><br><br><br><br><button class='button' id='css3button_login_recuperar' type='submit' value='Entrar' name='entrar' ><span> Recuperar Senha </span></button><td>
+			<td><br><br><br><br><button class='button' id='css3button_login_recuperar' type='enviar' value='enviar' name='enviar' ><span> Recuperar Senha </span></button><td>
 		</tr>
 
 </form>

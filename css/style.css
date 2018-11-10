@@ -222,6 +222,19 @@ button#css3button_login_recuperar {
     margin: -30px;
 }
 
+button#css3button_login_cadastro {
+    border-radius: 7px;
+    background-color: #747474;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 55px;
+}
 
 button#css3button_login_sair {
       border-radius: 7px;
@@ -275,7 +288,7 @@ button#css3button_login_sair {
 
 .button span:after {
   content: '\00bb';
-  position: absolute;
+  /*position: absolute;*/
   opacity: 0;
   top: 0;
   right: -20px;
