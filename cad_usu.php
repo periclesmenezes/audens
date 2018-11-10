@@ -31,12 +31,12 @@ if(isset($_POST['cadastrar'])){
 	<tr>
 	<td><b>Usuario:</b></td>
 	<td><input type='text' id='usuario' name='usuario' /></td>
-	</tr>	<tr>
+	</tr>	<tr><br>
 	<td><b>Senha:</b></td>
 	<td><input type='password' id='senha' name='senha' /></td>
 	</tr>	
 	<tr>
-	<td></td>
+	<td></td><br><br>
 	<td><input type='submit' name='cadastrar' id='cadastrar' value='Cadastrar Usuario' /></td>
 	</tr>
 </table>
