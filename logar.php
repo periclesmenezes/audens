@@ -17,7 +17,8 @@ setcookie("cor_preferida", "valor", time()-3600);
 setcookie("dt_ult_acesso", "valor", time()-3600);
 setcookie("destino", "Todos", time()-3600);
 $dt_ult_acesso = date("Y/m/d H:m:s");
-mysql_query("INSERT INTO conversas VALUES ('', 'Robo','todos', 'O usuario $_COOKIE[usuario] deixou o chat!','".date("Y-m-d H:i")."', '".time()."')");
+
+	mysql_query("INSERT INTO conversas VALUES ('', 'Robo','todos', 'O usu&aacute;rio $_COOKIE[usuario] deixou o chat!','".date("Y-m-d H:i")."', '".time()."')");
 
 }
 if(isset($_POST['entrar'])){

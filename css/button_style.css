@@ -1,6 +1,7 @@
 .portfolio-experiment#sair {
   height: 67px;
-  width: 130px;
+  width: 150px;
+  font-size: 1.5em;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +13,7 @@
   top: 15px;
   right: 0;
   bottom: 688px;
-  left: 1298px;
+  left: 893px;
   justify-content: center;
   align-items: center;
   -webkit-justify-content: center;
@@ -22,7 +23,7 @@
 .portfolio-experiment#atualizar{
   height: 67px;
   width: 150px;
-   font-size: 1.5em;
+  font-size: 1.5em;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +35,7 @@
   top: 15px;
   right: 0;
   bottom: 688px;
-  left: 983px;
+  left: 650px;
   justify-content: center;
   align-items: center;
   -webkit-justify-content: center;
@@ -56,7 +57,7 @@
   top: 15px;
   right: 0;
   bottom: 688px;
-  left: 1130px;
+  left: 750px;
   justify-content: center;
   align-items: center;
   -webkit-justify-content: center;
