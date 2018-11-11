@@ -21,7 +21,6 @@ if(isset($_POST['enviar'])){
 
 ?>
 
-
 <head>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -37,24 +36,6 @@ if(isset($_POST['enviar'])){
 		
 		<hgroup>
 			<img src="imagens/logo/LOGO AUDENS GROUP3.png" style="border-radius: 7px; margin:9px 0px -5px 17px;" width="220px" height="55px">
-							<section class="portfolio-experiment" id="Atualizar">
-									  <a href='index.php'>
-										<span class="text">Atualizar</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									  </a>
-							</section>
-								<section class="portfolio-experiment" id="meusdados">
-									  <a href='meus_dados.php'>
-										<span class="text">Meus Dados</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									  </a>
-								</section>
 								<section class="portfolio-experiment" id="sair">
 									  <a href='logar.php?sair=0'>
 										<span class="text" >Sair</span>
@@ -64,6 +45,26 @@ if(isset($_POST['enviar'])){
 										<span class="line -bottom"></span>
 									  </a>
 								</section>
+							
+								<section class="portfolio-experiment" id="meusdados">
+									  <a href='meus_dados.php'>
+										<span class="text">Meus Dados</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
+								<section class="portfolio-experiment" id="atualizar">
+									  <a href='index.php'>
+										<span class="text">Atualizar</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
+								
 		<ul  style="padding-left: 28px; margin-top: 14px; margin-bottom: -8px; list-style-type: none; font-family: 'Sanchez', serif;"><li style="margin-top: 18px;"><?php $Config->BoasVindas(); ?></li></ul>
 			<h2 style="margin-top: 16px; margin-left: 19px;">Sala de Entrevistas</h2>
 		</hgroup>
@@ -83,7 +84,6 @@ if(isset($_POST['enviar'])){
 								<option selected='selected' value='Todos'>Todos</option>
 								<?php  $users = new Conversas; $users->ListaOnline(); ?>
 							</select>
-							<!--input align='left' class='button' id='css3button' name='enviar' value='Enviar' type='submit'/-->
 								<button class="button" id='css3button' value='Enviar' type='submit' name='enviar'><span>Enviar </span></button>
 								
 				</div>
