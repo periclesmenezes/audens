@@ -1,118 +1,78 @@
-.portfolio-experiment#sair {
-  height: 67px;
-  width: 150px;
-  font-size: 1.5em;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  position: absolute;
-  top: 15px;
-  right: 0;
-  bottom: 688px;
-  left: 893px;
+.portfolio-experiment {
+  background: #EF4A25;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   -webkit-justify-content: center;
   -webkit-align-items: center;
+  -webkit-display: flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-experiment#sair {
+  height: 67px;
+  width: 91px;
+  font-size: 1.5em;
+  position: relative;
+  top: 15px;
+  right: 0;
+  bottom: 688px;
+  float: right;
+  left:   0;
 }
 
 .portfolio-experiment#atualizar{
   height: 67px;
   width: 150px;
   font-size: 1.5em;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  position: absolute;
+  position: relative;
   top: 15px;
   right: 0;
   bottom: 688px;
-  left: 650px;
-  justify-content: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
+  float: right;
+  left:   0;
 }
 
 .portfolio-experiment#meusdados{
   height: 67px;
   width: 180px;
-   font-size: 1.5em;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  position: absolute;
+  font-size: 1.5em;
+  position: relative;
   top: 15px;
   right: 0;
   bottom: 688px;
-  left: 750px;
-  justify-content: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
+  float: right;
+  left:   0;
 }
 
 .portfolio-experiment#login_recuperar{
   height: 46px;
   width: 150px;
-   font-size: 1em;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
+  font-size: 1em;
   position: absolute;
   top: 320px;
   right: 0;
   bottom: 688px;
   left: 200px;
-  justify-content: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
+  
 }
 
 .portfolio-experiment#login_cadastrar{
   height: 57px;
   width: 100px;
-   font-size: 1em;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
+  font-size: 1em;
   position: absolute;
   top: 315px;
   right: 0;
   bottom: 688px;
   left: 350px;
-  justify-content: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
 }
 
-
-
-.portfolio-experiment {
-  background: #EF4A25;
-}
 .portfolio-experiment a {
   color: black;
   text-decoration: none;

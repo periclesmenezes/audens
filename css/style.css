@@ -50,7 +50,7 @@ header#cabecalho h1{
 header#cabecalho h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
-    color: #888888;
+    color: #FFFFFF;
     padding: 0px;
     margin: 0px 0px 0px 25px;
 }
@@ -156,7 +156,7 @@ footer#rodape p{
       padding: 9px 9px 7px 7px;
       transition: all 0.5s;
       cursor: pointer;
-    margin: 5px;
+      margin: 5px;
 }
 
 button#css3button {
@@ -164,10 +164,10 @@ button#css3button {
       background-color: #8C9BB2;
       border: none;
       color: #FFFFFF;
-    width: 91px;
+      width: 93px;
       text-align: center;
       font-size: 14px;
-      font-color:
+      font-color:#FFFFFF;   
       padding:7px 7px 6px 6px
       transition: all 0.5s;
       cursor: pointer;
@@ -203,7 +203,7 @@ button#css3button_login_entrar {
       width: 91px;
       transition: all 0.5s;
       cursor: pointer;
-      margin: 43px;
+      margin: 0;
 }
 
 
@@ -248,7 +248,7 @@ button#css3button_login_sair {
       width: 91px;
       transition: all 0.5s;
       cursor: pointer;
-      margin: 30px;
+      margin: 16px;
 	
 }
 
@@ -262,13 +262,13 @@ button#css3button_login_sair {
 }
 
 .div-select  {
-    border-radius: 7px;
-     width:100px;  
-    overflow:hidden;
+      border-radius: 7px;
+      width:100px;  
+      overflow:hidden;
       background: url("icones/seta_para_expandir.png") no-repeat #8C9BB2; 
       background-position: 205px center;  
       width: 100px;
-      height: 36px; 
+      height: 33px; 
       font-family:Arial, Helvetica, sans-serif; 
       font-size:14px; 
       padding:9px 9px 7px 7px; 
