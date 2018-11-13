@@ -2,11 +2,12 @@
   padding:0px;
   margin: 0px;
 }
+
 html{
   font: 12pt Arial;
 }
 body{
-  background-color: rgba(255,0,0,0.5);  
+  background-color: #DEF3FF;  
   font-size:12px;
   font-family:Verdana, Geneva, sans-serif;
 }
@@ -85,4 +86,24 @@ a:active {
 .t02 {
   width: 100%;
   height: auto;
+}
+
+.flex a {
+  min-height:50vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+a.bttn {
+  color:$primary;
+  text-decoration:none;
+  -webkit-transition:0.3s all ease;
+  transition:0.3s ease all;
+  &:hover {
+    color:#FFF;
+  }
+  &:focus {
+    color:#FFF;
+  }
 }

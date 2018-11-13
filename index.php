@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="css/sala1.php" type="text/css" />
+<link rel="stylesheet" href="css/fade.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 <?php
 ob_start();
 include_once("config.php");
@@ -18,10 +21,10 @@ if(isset($_POST['enviar'])){
 
 ?>
 
-
 <head>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/button_style.css"  />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
 	<title> Audens </title>
 	<script type="text/javascript" src="js/ajax.js"></script>
@@ -29,20 +32,43 @@ if(isset($_POST['enviar'])){
 </head>
 <body onLoad="document.formulario.chatear.focus();" id="sala2">
 <div id="conteiner">
-	<header id="cabecalho">
+	<header id="cabecalho" style="height: 130px;">
+		
 		<hgroup>
-			<h1>Audens</h1>
-			<h2>Sala de Entrevistas</h2>
+			<img src="imagens/logo/LOGO AUDENS GROUP3.png" style="border-radius: 7px; margin:9px 0px -5px 17px;" width="220px" height="55px">
+								<section class="portfolio-experiment" id="sair">
+									  <a href='logar.php?sair=0'>
+										<span class="text" >Sair</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
+							
+								<section class="portfolio-experiment" id="meusdados">
+									  <a href='meus_dados.php'>
+										<span class="text">Meus Dados</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
+								<section class="portfolio-experiment" id="atualizar">
+									  <a href='index.php'>
+										<span class="text">Atualizar</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									  </a>
+								</section>
+								
+		<ul  style="padding-left: 28px; margin-top: 14px; margin-bottom: -8px; list-style-type: none; font-family: 'Sanchez', serif;"><li style="margin-top: 18px;"><?php $Config->BoasVindas(); ?></li></ul>
+			<h2 style="margin-top: 16px; margin-left: 19px;">Sala de Entrevistas</h2>
 		</hgroup>
-		<nav id="menu">
-			<h1>Menu Principal</h1>
-			<ul type="circle">
-				<li><?php $Config->BoasVindas(); ?></li>
-				<li><a href='index.php'>Atualizar</a></li>
-				<li><a href='meus_dados.php'>Meus Dados</a></li>
-				<li><a href='logar.php?sair=0'>Sair</a></li>
-			</ul>
-		</nav>
+		
 	</header>
 	<section id="batepapo"><center>
 		<section id="mensagens">
@@ -50,22 +76,27 @@ if(isset($_POST['enviar'])){
 		</section>
 		<br/>
 		<form action='index.php' name='formulario' method='post'> <hr>
-			<b>Mensagem: </b><input type='text' id='chatear' name='chatear' size='40' />
-							<select id='destino' name='destino' >
+			<br><div>
+							
+								<b id="mensagem" style="font-family: 'Sanchez', serif;">Mensagem: </b><input type='text' class='caixa_mensagem' id='chatear' placeholder="Digite aqui..." name='chatear' style="width: 426px; border-radius: 5px;" />
+							
+							<select class='div-select' id='destino' name='destino' >
 								<option selected='selected' value='Todos'>Todos</option>
 								<?php  $users = new Conversas; $users->ListaOnline(); ?>
 							</select>
-							<input align='left' id='enviar' name='enviar' value='Enviar' size='' type='submit' size='10px' />
+								<button class="button" id='css3button' value='Enviar' type='submit' name='enviar'><span>Enviar </span></button>
+								
+				</div>
 		</form>	
 		<br/>
 		<button id="gravar">
-			<i class="fa fa-microphone"></i>
+			<i><span><img src="imagens/logo/microfone.gif" ..... width="22px" height="22px" class="fa fa-microphone"></span></i>
 		</button>
-		<p id="status" style="display: block; text-align: center;"> <span>Parado</span></p>
+		<h4 id="status" style="display: block; text-align: center;"> <span>Click para acionar</span>
 		</center>
 	</section>
 	<aside id="usuarios"><center>
-		<header id="ucabecalho">
+		<header id="ucabecalho" style="height: 48px;">
 			<h1>Usuários Online</h1>
 		</header>
 		<iframe name='iframe-usu-online' id="iusuarios" src='usuarios-online.php'></iframe>
@@ -110,13 +141,13 @@ if(isset($_POST['enviar'])){
 				try {
 				//Ativa o microfone.
 					recognizer.start();
-					document.getElementById("status").getElementsByTagName("span")[0].className = "Executando";
-					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Executando";
+					document.getElementById("status").getElementsByTagName("span")[0].className = "Record";
+					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Record";
 				} catch(ex) {
 				//Caso já esteja ativo o microfone, para.
 					recognizer.stop();
-					document.getElementById("status").getElementsByTagName("span")[0].className = "";
-					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Parado";
+					document.getElementById("status").getElementsByTagName("span")[0].className = "Stop";
+					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Stop";
 				}
 			}
 			)

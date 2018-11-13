@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/sala1.php" type="text/css" />
 <?php
 	include_once("config.php");
 	include_once("Class.chat.php");
