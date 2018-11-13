@@ -8,7 +8,7 @@ $cor_fundo = '#FFFFFF';
   border-radius: 9px;
   width: 650px;
   height: 407px;
-  margin:11.2% 35%;
+  margin:11.2% 32.8%;
   position: relative;	
   font-size: 12px;
   font-family: cursive;

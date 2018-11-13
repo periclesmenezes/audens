@@ -17,11 +17,11 @@ $Resetar->EsqueciSenha($_POST['usuario'], $_POST['email']);
 
 <html>
 
-<form  action='esqueci_senha.php' method='post' id='login1'>
+<form  action='esqueci_senha.php' method='post' id='login1' >
 <link rel='stylesheet' href='css/style.css' type='text/css' />
 <link rel='stylesheet' href='css/button_style.css'  />
 <img src='imagens/logo/LOGO AUDENS GROUP3.png' style='border-radius: 7px; margin:50px 17px 11px 210px;' width='220px' height='55px'>
-	<table align='center' >
+	<table align='center' style='margin-left:165px;' >
 		<tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr>
 			<td><b> Email: </b></td>
 			<td><input type='text' name='email' id='email' /><td>
@@ -31,7 +31,7 @@ $Resetar->EsqueciSenha($_POST['usuario'], $_POST['email']);
 			<td><input type='text' name='usuario' id='usuario' /><td>
 		</tr>	<br>	<tr>
 			<td><b></b></td>
-			<td><br><br><br><br><button class='button' id='css3button_login_recuperar' type='enviar' value='enviar' name='enviar' ><span> Recuperar Senha </span></button><td>
+			<td><br><button class='button' id='css3button_login_tela_recuperar' type='enviar' value='enviar' name='enviar' ><span> Recuperar Senha </span></button><td>
 		</tr>
 
 </form>
