@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/estilo.php" type="text/css" />
+
 <?php
 ob_start();
 
@@ -18,6 +19,9 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 ?>
 
 <form action='meus_dados.php' method='post' id='login1'>
+	<img src='imagens/logo/LOGO AUDENS GROUP3.png' style='border-radius: 7px; margin:50px 17px 11px 210px;' width='220px' height='55px'>
+<link rel='stylesheet' href='css/style.css' type='text/css' />
+<link rel='stylesheet' href='css/button_style.css'  />
 	<table align='center'>
 		<tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr>
 			<td><b>Email: </b></td>
@@ -32,10 +36,11 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 			<td><b>Senha: </b></td>
 			<td><input size='30px' type='password' name='senha' id='senha' /><td>
 		</tr>	
-
+<tr>
 		<tr>
-			<td><b>Confirmar: </b></td>
-			<td><input size='30px' type='submit' value='Sim' name='editar' id='editar' /><td>
+			<td></td>
+			<td><button class='button' id='css3button_login_confirmar' type='submit' value='Sim' name='editar' id='editar' ><span>Confirmar</span></button><td>
+ 			
 		</tr>
 		</table>
 </form>

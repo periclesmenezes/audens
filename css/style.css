@@ -201,6 +201,14 @@ button#css3button_login_cadastro {
     margin: 55px;
 }
 
+button#css3button_login_confirmar {
+   background-color: #747474;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    margin: 55px;
+}
+
 button#css3button_login_sair {
       background-color: #747474;
       font-size: 14px;
