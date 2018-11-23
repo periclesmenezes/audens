@@ -1,10 +1,10 @@
 
-<link rel="stylesheet" href="css/estilo.php" type="text/css" />
+<link rel="stylesheet" href="css/estilo.php" type="text/css" >
 <?php
 include_once("config.php");
 include_once("Class.usuario.php");
 
-if(isset($_POST['cadastrar'])){
+if(isset($_POST['Cadastrar'])){
 	if($_POST['email'] == ""){
 	echo "O campo nome nao pode ficar vazio.";
 	}else if($_POST['usuario'] == ""){
@@ -17,15 +17,12 @@ if(isset($_POST['cadastrar'])){
 	}
 }
 
-
-
-
 ?>
 
 <form action='cad_usu.php' method='post' id='login1'>
 <img src='imagens/logo/LOGO AUDENS GROUP3.png' style='border-radius: 7px; margin:50px 17px 11px 210px;' width='220px' height='55px'>
-<link rel='stylesheet' href='css/style.css' type='text/css' />
-<link rel='stylesheet' href='css/button_style.css'  />
+<link rel='stylesheet' href='css/style.css' type='text/css'>
+<link rel='stylesheet' href='css/button_style.css'>
 <table align='center'>
 	<tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr>
 	<td><b>Email:</b></td>
@@ -41,7 +38,7 @@ if(isset($_POST['cadastrar'])){
 	<tr>
 	<td></td>
 	<td>
-		<button class='button' id='css3button_login_cadastro' id='cadastrar' type='submit' value='Cadastrar Usuario' name='Cadastrar' ><span> </span>Gravar Usu&aacute;rio</button><td>
+		<button class='button' id='cadastrar' type='submit' value='Cadastrar Usuario' name='Cadastrar' ><span> </span>Gravar Usu&aacute;rio</button><td>
 		</td>
 	</tr>
 </table>

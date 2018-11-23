@@ -78,7 +78,7 @@ if(isset($_POST['enviar'])){
 		<form action='index.php' name='formulario' method='post'> <hr>
 			<br><div>
 							
-								<b id="mensagem" style="font-family: 'Sanchez', serif;">Mensagem: </b><input type='text' class='caixa_mensagem' id='chatear' placeholder="Digite aqui..." name='chatear' style="width: 426px; border-radius: 5px;" />
+			<b id="mensagem" style="font-family: 'Sanchez', serif;">Mensagem: </b><input type='text' class='caixa_mensagem' id='chatear' placeholder="Digite aqui..." name='chatear' style="width: 426px; border-radius: 5px;" />
 							
 							<select class='div-select' id='destino' name='destino' >
 								<option selected='selected' value='Todos'>Todos</option>

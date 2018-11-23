@@ -8,7 +8,7 @@ body{
 
 body b{
    font-family: 'Courier New', Courier, monospace; 
-    align-self: 
+    /** align-self: **/
     color: #FFF;
     font-size: 16px;
 }
@@ -212,14 +212,13 @@ button#css3button_login_confirmar {
 button#css3button_login_sair {
       background-color: #747474;
       font-size: 14px;
-      font-color:
-      padding:7px 7px 6px 6px
+      /** font-color: **/
+      padding:7px 7px 6px 6px;
       width: 91px;
       margin: 16px;
 	
 }
 
-.
 .caixa_mensagem{
     border-radius: 7px;
     size: 40px;
@@ -232,7 +231,7 @@ button#css3button_login_sair {
       border-radius: 7px;
       width:100px;  
       overflow:hidden;
-      background: url("icones/seta_para_expandir.png") no-repeat #8C9BB2; 
+      background: url("../icones/seta_para_expandir.png") no-repeat #8C9BB2; 
       background-position: 205px center;  
       width: 100px;
       height: 33px; 
@@ -242,7 +241,7 @@ button#css3button_login_sair {
       color:#fff; 
       text-indent: 0.01px; 
       text-overflow: "";  
-      select::-ms-expand {display: none;} 
+      /** select::-ms-expand {display: none;}  **/
   
 }
 
@@ -269,7 +268,4 @@ button#css3button_login_sair {
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-
 }
