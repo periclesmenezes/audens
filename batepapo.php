@@ -12,8 +12,9 @@
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
     // Definições do PeerJS, como dominio, key e outros
-    var peer = new Peer({ host: 'localhost', port:9000, debug: 3});
-
+    //var peer = new Peer({ host: 'localhost', port:9000, debug: 3});
+    var peer = new Peer();
+    
     // Pega ID da conexão atual
     peer.on('open', function(id)
     {
@@ -179,7 +180,9 @@
         </div>
       </div>
   </div>
-
+  <footer>
+    <p><a href="./index.php" class="pure-button pure-button-success" id="Voltar">Voltar...</a></p>
+  </footer>
 
 </body>
 </html>
