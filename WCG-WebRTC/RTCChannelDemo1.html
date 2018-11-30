@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WCG -- WebRTC Tutorial for Beginners</title>
+</head>
+<body>
+    <textarea id="remoteUser" rows="10" disabled ></textarea>
+    <textarea id="self" rows="10"></textarea>
+    <button id="makeCall" type="button" >Connect</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <script src="/js/webrtc.datachannel.js"></script>
+</body>
+</html>
