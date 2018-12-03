@@ -81,13 +81,18 @@ class Conversas {
 		//Pega a lista de usuários Online.
 		$usuarios = mysql_query("SELECT * FROM online order by usuario asc");
 		while($res = mysql_fetch_assoc($usuarios)){
+			$a = 0;
+while($a < 4){
+	$a++;
 			if($tabela){
-				echo "<div align='center'><a href='batepapo.php'>". $res['usuario'] . " </a></div>";
-
+				echo "<a href='http://localhost:8090/index.html?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
+//				echo "<a href='batepapo.php?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
+//				echo "<div align='center'><a href='batepapo.php'>". $res['usuario'] . " </a></div>";
 			}else{
 				echo "<b>".$res['usuario']."</b></br>";
 			}
-		}		
+		}
+	}		
 	}
 		
 		function ListaOnline(){

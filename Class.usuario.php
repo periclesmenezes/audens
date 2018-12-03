@@ -5,12 +5,11 @@ include_once("funcao.php");
 class Usuario {
 	
 	
-	
 	function Cadastrar($email,$usuario, $senha){
 		$this->usuario = AntiSql($usuario);
 		$this->email = AntiSql($email);
 		$this->senha = md5($senha);
-		
+
 		$consulta = mysql_query("SELECT * FROM usuario where usuario='$usuario' ");
 		$conConsulta = mysql_num_rows($consulta);
 		

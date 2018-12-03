@@ -1,3 +1,5 @@
+
+
 <link rel="stylesheet" href="css/sala1.php" type="text/css" />
 <?php
 	include_once("config.php");
@@ -13,5 +15,6 @@
 <link rel="stylesheet" href="css/estilo.css" type="text/css" />
 
 <body onload="JavaScript:timedRefresh(<?php echo $Refresh; ?>);"> </body>
-
+<center>
 <?php $chat->UserOnline(true); ?>
+</center>
