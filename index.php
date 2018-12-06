@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="css/sala1.php" type="text/css" />
-<link rel="stylesheet" href="css/fade.css" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 <?php
 ob_start();
 include_once("config.php");
@@ -20,56 +17,61 @@ if(isset($_POST['enviar'])){
 }
 
 ?>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/button_style.css"  />
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/sala1.php" type="text/css">
+	<link rel="stylesheet" href="css/fade.css"  type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/button_style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
 	<title> Audens </title>
-	<script type="text/javascript" src="js/ajax.js"></script>
-	<script src="js/js.js"></script>
 </head>
-<body onLoad="document.formulario.chatear.focus();" id="sala2">
-<div id="conteiner">
-	<header id="cabecalho" style="height: 130px;">
-		
-		<hgroup>
-			<img src="imagens/logo/LOGO AUDENS GROUP3.png" style="border-radius: 7px; margin:9px 0px -5px 17px;" width="220px" height="55px">
-								<section class="portfolio-experiment" id="sair">
-									  <a href='logar.php?sair=0'>
-										<span class="text" >Sair</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									  </a>
-								</section>
-							
-								<section class="portfolio-experiment" id="meusdados">
-									  <a href='meus_dados.php'>
-										<span class="text">Meus Dados</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									  </a>
-								</section>
-								<section class="portfolio-experiment" id="atualizar">
-									  <a href='index.php'>
-										<span class="text">Atualizar</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									  </a>
-								</section>
-								
-		<ul  style="padding-left: 28px; margin-top: 14px; margin-bottom: -8px; list-style-type: none; font-family: 'Sanchez', serif;"><li style="margin-top: 18px;"><?php $Config->BoasVindas(); ?></li></ul>
-			<h2 style="margin-top: 16px; margin-left: 19px;">Sala de Entrevistas</h2>
-		</hgroup>
-		
-	</header>
+
+<body c onLoad="document.formulario.chatear.focus();" id="sala2">
+	<div class="container mt-3" id="conteiner">
+		<header id="cabecalho" class="mb-3">
+			<hgroup>
+				<img src="imagens/logo/LOGO AUDENS GROUP3.png" width="220px" height="55px">
+				<section class="portfolio-experiment" id="sair">
+					<a href='logar.php?sair=0'>
+						<span class="text" >Sair</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span>
+					</a>
+				</section>
+				<section class="portfolio-experiment" id="meusdados">
+					<a href='meus_dados.php'>
+						<span class="text">Meus Dados</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span>
+					</a>
+				</section>
+				<section class="portfolio-experiment" id="atualizar">
+					<a href='index.php'>
+						<span class="text">Atualizar</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span>
+					</a>
+				</section>
+			</hgroup>
+			<h6 class="mt-2"><?php $Config->BoasVindas(); ?></h6>
+			<h2 class="mb-2">Sala de Entrevistas</h2>
+		</header>
+
 	<section id="batepapo"><center>
 		<section id="mensagens">
 			<iframe  name="iframe" id="imensagens" src='iframe.php'></iframe>
@@ -102,55 +104,66 @@ if(isset($_POST['enviar'])){
 		<iframe name='iframe-usu-online' id="iusuarios" src='usuarios-online.php'></iframe>
 		</center>
 	</aside>
+
+	<!-- Botão para acionar modal >
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">Abrir modal de demonstração</button -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="titulomodal">Sala de Bate Papo</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row"><p>Meu ID: <span id="meu-id">...</span></p></div>
+				<div class="row"><p>Em chamada com <span id="destino-id">...</span></p></div>
+				<!-- div class="container" -->
+					<div class="card-deck mb-3 mt-3 text-center">
+						<div class="card mb-4 shadow-sm">
+							<div class="card-header">
+								<h2>Remoto</h2>
+							</div>
+							<div class="card-body">
+								<video class="card-img-top" id="destino-video" autoplay></video>
+							</div>
+						</div>
+						<div class="card mb-4 shadow-sm">
+							<div class="card-header">
+								<h2>Local</h2>
+							</div>
+							<div class="card-body">
+								<video class="card-img-top" id="meu-video" autoplay></video>
+							</div>
+						</div>
+					</div>
+				<!-- /div -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" id="make-call">Ligar</button>
+				<button type="button" class="btn btn-danger"  id="end-call">Desligar</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
 	<footer id="rodape">
 		<p>Desenvolvido por Péricles Filho & Associados. Versão: V1.1.001</p>
 	</footer>
-</div>
+	</div>
+	<!-- JavaScript -->
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="js/voz-texto.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
-<script type="text/javascript">
-	// Verifica se o Browser suporta a API de transcrição.
-	window.SpeechRecognition = window.SpeechRecognition       ||
-								window.webkitSpeechRecognition ||
-								null;
-	//caso não suporte esta API DE VOZ                              
-	if (window.SpeechRecognition === null) {
-		document.getElementById('ws-unsupported').classList.remove('hidden');
-		document.querySelector('#gravar i').setAttribute('style','box-shadow: inset 0 0 20px 100px red;color:#000;');
-	}else{
-		var recognizer = new window.SpeechRecognition();
-		var transcription = document.getElementById("chatear");
-		//Para o reconhecedor de voz, não parar de ouvir, mesmo que tenha pausas no usuario
-		recognizer.continuous = true;
-		recognizer.languagen = "pt-br";
-
-		//Função que fica escutando microfone e carregando o texto.
-		recognizer.onresult = function(event){
-								transcription.value = "";
-								for (var i = event.resultIndex; i < event.results.length; i++) {
-									if(event.results[i].isFinal){
-										transcription.value = event.results[i][0].transcript + '.';
-									}else{
-										transcription.value += event.results[i][0].transcript;
-									}
-								}
-							}
-		//Fim da Função.
-
-		document.querySelector("#gravar i").addEventListener("click",
-			function(){
-				try {
-				//Ativa o microfone.
-					recognizer.start();
-					document.getElementById("status").getElementsByTagName("span")[0].className = "Record";
-					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Record";
-				} catch(ex) {
-				//Caso já esteja ativo o microfone, para.
-					recognizer.stop();
-					document.getElementById("status").getElementsByTagName("span")[0].className = "Stop";
-					document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Stop";
-				}
-			}
-			)
-	}
-</script>
-
+</html>

@@ -85,8 +85,8 @@ class Conversas {
 while($a < 4){
 	$a++;
 			if($tabela){
-				echo "<a href='http://localhost:8090/index.html?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
-//				echo "<a href='batepapo.php?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
+//				echo "<a href='http://localhost:8090/index.html?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
+				echo "<a href='batepapo.php?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
 //				echo "<div align='center'><a href='batepapo.php'>". $res['usuario'] . " </a></div>";
 			}else{
 				echo "<b>".$res['usuario']."</b></br>";

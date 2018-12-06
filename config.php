@@ -47,7 +47,7 @@ function __construct(){}
 
 
 	function BoasVindas(){
-	echo "Ol&aacute; <b>$_COOKIE[usuario]</b> Seu &uacute;ltimo acesso foi em: $_COOKIE[dt_ult_acesso]</b>";
+	echo "Ol&aacute; <b>$_COOKIE[usuario]</b> Seu &uacute;ltimo acesso foi em: $_COOKIE[dt_ult_acesso]";
 	}
 
 
