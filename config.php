@@ -21,20 +21,34 @@ $usuario = "id7841660_root";
 $senha = "123456";
 $banco = "id7841660_chat";
 */
-$host = "127.0.0.1";
-$usuario = "root";
-$senha = "";
-$banco = "chat";
 
-if(@!mysql_connect($host, $usuario, $senha)){
-die("erro nao pode se conectar");
+$ambiente = "D"; //Desenvolvimento
+//$ambiente = "H"; //Homologação
+//$ambiente = "P"; //Produção
+
+if ($ambiente == "D") { 
+	//Configurações para Desenvolvimento.
+	$host = "127.0.0.1";
+	$usuario = "root";
+	$senha = "";
+	$banco = "chat";
+
+	if(@!mysql_connect($host, $usuario, $senha)){
+	die("erro nao pode se conectar");
+	}
+	if(@!mysql_select_db($banco)){
+	die("erro base de dados");
+	}
+} elseif ($ambiente == "H") {
+	//Configurações para Homologação.
+	# PHP 7
+	$conexao = mysqli_connect('localhost','audens81_root','audens@123');
+	$banco = mysqli_select_db($conexao,'audens81_chat');
+	mysqli_set_charset($conexao,'utf8');
+} else {
+	//Configurações para Produção.
+	
 }
-if(@!mysql_select_db($banco)){
-die("erro base de dados");
-}
-
-
-
 
 //class
 //TEMPO PARA REFRESH DO IFRAME
