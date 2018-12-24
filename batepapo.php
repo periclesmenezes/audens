@@ -10,9 +10,15 @@ include_once("Class.chat.php");
 include_once("Class.emoticon.php");
 
 //Carrega o destino com o usuário informado para conversar.
-$destino = $_GET["u"];
-
-if(isset($_POST['enviar'])){
+$destino = "";
+if(isset($_GET["u"]))
+{
+  $destino = $_GET["u"];
+} else 
+{
+  $destino = $_COOKIE['destino'];
+}
+if(isset($_POST['menviar'])){
 	$chat = new Conversas;
 //	$destino = $_POST['destino'];
 	$chat->Adicionar($_POST['chatear'], $destino);
@@ -77,11 +83,11 @@ if(isset($_POST['enviar'])){
 			    <iframe  name="iframe" id="imensagens" src='iframe.php'></iframe>
 		    <!-- /section -->
     		<br>
-		    <form action='batepapo.php' name='formulario' method='post'> 
+		    <form action=<?php echo "'batepapo.php?u=".$destino."'"; ?> name='formulario' method='post'> 
           <div>
             <b id="mensagem" style="font-family: 'Sanchez', serif;">Mensagem: </b>
             <input type='text' class='caixa_mensagem' id='chatear' placeholder="Digite aqui..." name='chatear' style="width: 426px; border-radius: 5px;" />
-            <button class="button" id='css3button' value='Enviar' type='submit' name='enviar'><span>Enviar</span></button>
+            <button class="button" id='css3button' value='Enviarm' type='submit' name='menviar'><span>Enviar</span></button>
           </div>
 		    </form>	
       </div>

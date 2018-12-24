@@ -40,7 +40,6 @@ $Dados->EditarDados($_POST['email'], $_POST['usuario'], $_POST['senha']);
 		<tr>
 			<td></td>
 			<td><button class='button' id='css3button_login_confirmar' type='submit' value='Sim' name='editar' id='editar' ><span>Confirmar</span></button><td>
- 			
 		</tr>
 		</table>
 </form>

@@ -14,14 +14,14 @@ class Conversas {
 		$this->conversa = AntiSql($conversa);
 		$this->destino = AntiSql($destino);
 		if(empty($this->conversa)){
-			echo "<script>alert('ERRO conversa nao pode ficar vazia'); location.href='index.php'; </script>";
-			exit;
+			//echo "<script>alert('ERRO conversa nao pode ficar vazia'); //location.href='index.php'; </script>";
+			return;
 		}
 		$usuario = "<font color=\'$_COOKIE[cor_preferida]\'>$_COOKIE[usuario]</font>";
 		$data = date("Y/m/d H:i");
 		$conversa = mysql_query("INSERT INTO conversas values ('','$usuario','$destino', '$this->conversa', '$data','".time()."') ");
 		if($conversa){
-			header("Location: index.php");
+			//header("Location: index.php");
 		}else{
 			echo "erro nao esperado";
 		}
@@ -82,8 +82,6 @@ class Conversas {
 		$usuarios = mysql_query("SELECT * FROM online order by usuario asc");
 		while($res = mysql_fetch_assoc($usuarios)){
 			$a = 0;
-while($a < 4){
-	$a++;
 			if($tabela){
 //				echo "<a href='http://localhost:8090/index.html?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
 				echo "<a href='batepapo.php?u=" . $res['usuario'] . "' target='_top'>". $res['usuario'] . "</a> </br>";
@@ -91,8 +89,7 @@ while($a < 4){
 			}else{
 				echo "<b>".$res['usuario']."</b></br>";
 			}
-		}
-	}		
+		}		
 	}
 		
 		function ListaOnline(){

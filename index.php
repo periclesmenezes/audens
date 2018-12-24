@@ -69,9 +69,15 @@ if(isset($_POST['enviar'])){
 				</section>
 			</hgroup>
 			<h6 class="mt-2"><?php $Config->BoasVindas(); ?></h6>
-			<h2 class="mb-2">Sala de Entrevistas</h2>
+			<h2 class="">Sala de Entrevistas</h2>
 		</header>
-
+		<div id="husuarios" class="row mb-1 text-center">
+				<h1 class="mr-auto ml-auto">Usuários Online</h1>
+		</div>
+		<div id="busuario" class="row mb-1 text-center">
+			<iframe class="mr-auto ml-auto mb-2" name='iframe-usu-online' id="iusuarios" src='usuarios-online.php'></iframe>
+		</div>
+<!--
 	<section id="batepapo"><center>
 		<section id="mensagens">
 			<iframe  name="iframe" id="imensagens" src='iframe.php'></iframe>
@@ -84,7 +90,7 @@ if(isset($_POST['enviar'])){
 							
 							<select class='div-select' id='destino' name='destino' >
 								<option selected='selected' value='Todos'>Todos</option>
-								<?php  $users = new Conversas; $users->ListaOnline(); ?>
+								<?php  //$users = new Conversas; $users->ListaOnline(); ?>
 							</select>
 								<button class="button" id='css3button' value='Enviar' type='submit' name='enviar'><span>Enviar </span></button>
 								
@@ -104,6 +110,7 @@ if(isset($_POST['enviar'])){
 		<iframe name='iframe-usu-online' id="iusuarios" src='usuarios-online.php'></iframe>
 		</center>
 	</aside>
+-->
 
 	<!-- Botão para acionar modal >
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">Abrir modal de demonstração</button -->
